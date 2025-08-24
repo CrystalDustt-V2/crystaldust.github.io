@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'No build step required for static HTML' && exit 0",
+    "build": "mkdir -p public && cp -r src/* public/",
     "start": "vercel dev"
   },
   "dependencies": {},
